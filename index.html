@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduMentor - Find the Best Home Tutors</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Edu<span>Mentor</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Our Services</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="#" class="btn btn-primary">Login/Signup</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Find the Perfect <span>Home Tutor</span> for Your Child</h1>
+                <p>Personalized one-on-one learning with certified tutors for all subjects and grades</p>
+                
+                <div class="tutor-search-box">
+                    <h3>Find a Tutor Now</h3>
+                    <form id="tutorSearchForm">
+                        <div class="form-group">
+                            <select id="board" required>
+                                <option value="">Select Board</option>
+                                <option value="cbse">CBSE</option>
+                                <option value="icse">ICSE</option>
+                                <option value="ib">IB</option>
+                                <option value="state">State Board</option>
+                                <option value="igcse">IGCSE</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select id="grade" required>
+                                <option value="">Select Grade</option>
+                                <option value="1-5">Grade 1-5</option>
+                                <option value="6-8">Grade 6-8</option>
+                                <option value="9-10">Grade 9-10</option>
+                                <option value="11-12">Grade 11-12</option>
+                                <option value="college">College</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select id="subject" required>
+                                <option value="">Select Subject</option>
+                                <option value="math">Mathematics</option>
+                                <option value="science">Science</option>
+                                <option value="english">English</option>
+                                <option value="social">Social Studies</option>
+                                <option value="computer">Computer Science</option>
+                                <option value="languages">Languages</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Find Tutor</button>
+                    </form>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/portrait-teacher-work-educational-system.jpg" alt="Tutor teaching student">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Why Choose Our Tutors</h2>
+            <p class="section-subtitle">We provide the best learning experience for your child</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <h3>Qualified Tutors</h3>
+                    <p>All our tutors are highly qualified with proper teaching certifications and subject expertise.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Home Tutoring</h3>
+                    <p>Personalized one-on-one attention in the comfort of your home at your preferred time.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Progress Tracking</h3>
+                    <p>Regular progress reports and assessments to track your child's improvement.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-rupee-sign"></i>
+                    </div>
+                    <h3>Affordable Rates</h3>
+                    <p>Quality tutoring at competitive prices with flexible payment options.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Flexible Timing</h3>
+                    <p>Schedule classes according to your convenience with rescheduling options.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Customized Learning</h3>
+                    <p>Tailored teaching methods based on your child's learning style and pace.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Major Courses Section -->
+<section class="courses">
+    <div class="container">
+        <h2 class="section-title">Our Major Courses</h2>
+        <p class="section-subtitle">Comprehensive tutoring for all major education boards in India</p>
+        
+        <div class="courses-grid">
+            <div class="course-card">
+                <div class="course-icon">
+                    <img src="images/cbse_logo.png" alt="CBSE Logo" class="course-logo">
+                </div>
+                <h3>CBSE</h3>
+                <p>Central Board of Secondary Education - National pattern with focus on science and mathematics</p>
+                <a href="#" class="btn btn-outline">View Subjects <i class="fas fa-arrow-right"></i></a>
+            </div>
+            
+            <div class="course-card">
+                <div class="course-icon">
+                    <img src="images/CISCE_logo.png" alt="ICSE Logo" class="course-logo">
+                </div>
+                <h3>ICSE</h3>
+                <p>Indian Certificate of Secondary Education - Comprehensive curriculum with equal focus on all subjects</p>
+                <a href="#" class="btn btn-outline">View Subjects <i class="fas fa-arrow-right"></i></a>
+            </div>
+            
+            <div class="course-card">
+                <div class="course-icon">
+                    <img src="images/ib-world-school-logo-1-colour.png" alt="IB Logo" class="course-logo">
+                </div>
+                <h3>IB</h3>
+                <p>International Baccalaureate - Internationally recognized program with inquiry-based learning</p>
+                <a href="#" class="btn btn-outline">View Subjects <i class="fas fa-arrow-right"></i></a>
+            </div>
+            
+            <div class="course-card">
+                <div class="course-icon">
+                    <img src="images/igcse2.png" alt="IGCSE Logo" class="course-logo">
+                </div>
+                <h3>IGCSE</h3>
+                <p>International General Certificate - Cambridge curriculum with global perspective</p>
+                <a href="#" class="btn btn-outline">View Subjects <i class="fas fa-arrow-right"></i></a>
+            </div>
+            
+            <div class="course-card">
+                <div class="course-icon">
+                    <img src="images/Maharastra Board exam.webp" alt="State Board Logo" class="course-logo">
+                </div>
+                <h3>State Boards</h3>
+                <p>All State Syllabi - Region-specific content with local language options available</p>
+                <a href="#" class="btn btn-outline">View Subjects <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Our Achievements Section -->
+<section class="achievements">
+    <div class="container">
+        <h2 class="section-title">Our Achievements</h2>
+        <p class="section-subtitle">Trusted by thousands of students and parents across the country</p>
+        
+        <div class="achievements-grid">
+            <div class="achievement-card">
+                <div class="achievement-icon">
+                    <i class="fas fa-book-open"></i>
+                </div>
+                <h3 class="counter" data-target="20">0</h3>
+                <p>Total Courses</p>
+            </div>
+            
+            <div class="achievement-card">
+                <div class="achievement-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3 class="counter" data-target="500">0</h3>
+                <p>Happy Students</p>
+            </div>
+            
+            <div class="achievement-card">
+                <div class="achievement-icon">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                </div>
+                <h3 class="counter" data-target="80">0</h3>
+                <p>Expert Tutors</p>
+            </div>
+            
+            <div class="achievement-card">
+                <div class="achievement-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <h3 class="counter" data-target="25">0</h3>
+                <p>Cities Covered</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="testimonials">
+    <div class="container">
+        <h2 class="section-title">What Our Students Say</h2>
+        <p class="section-subtitle">Hear from our satisfied students and parents</p>
+        
+        <div class="testimonial-slider">
+            <div class="testimonial-track">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"My math grades improved from C to A in just 3 months! The tutor was patient and explained concepts in a way I could easily understand."</p>
+                        <div class="testimonial-author">
+                            <img src="images/student1.jpg" alt="Rahul Sharma" class="author-img">
+                            <div class="author-info">
+                                <h4>Rahul Sharma</h4>
+                                <p>Class 10, CBSE</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="testimonial-text">"The IB English tutor helped my daughter develop critical analysis skills that boosted her predicted grades. Highly recommended!"</p>
+                        <div class="testimonial-author">
+                            <img src="images/parent1.jpg" alt="Priya Patel" class="author-img">
+                            <div class="author-info">
+                                <h4>Priya Patel</h4>
+                                <p>Parent of IB Student</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"I was struggling with Physics until I found this service. My tutor broke down complex topics into simple concepts. Scored 95% in finals!"</p>
+                        <div class="testimonial-author">
+                            <img src="images/student2.jpg" alt="Ananya Gupta" class="author-img">
+                            <div class="author-info">
+                                <h4>Ananya Gupta</h4>
+                                <p>Class 12, ISC</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 4 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"The flexibility to schedule sessions on weekends was perfect for my busy schedule. My chemistry understanding improved dramatically."</p>
+                        <div class="testimonial-author">
+                            <img src="images/student3.jpg" alt="Arjun Mehta" class="author-img">
+                            <div class="author-info">
+                                <h4>Arjun Mehta</h4>
+                                <p>Class 11, State Board</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="slider-controls">
+                <button class="slider-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+                <div class="slider-dots"></div>
+                <button class="slider-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <p class="section-subtitle">Find answers to common questions about our tutoring services</p>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How do I select the right tutor for my child?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>After you submit your requirements, we'll match you with suitable tutors based on your child's needs. You can review tutor profiles, qualifications, and experience before making a selection. We also offer a trial session to ensure the tutor is the right fit.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What are your tutor qualification standards?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>All our tutors undergo a rigorous screening process including qualification verification, background checks, and teaching demonstrations. Most hold degrees in their subject areas and have prior teaching experience.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How much does home tutoring cost?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Pricing varies based on the tutor's experience, subject complexity, and grade level. Our rates are competitive and transparent with no hidden fees. Contact us for detailed pricing information based on your specific requirements.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What safety measures do you have for home tutoring?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>All our tutors undergo thorough background checks and verification. We maintain complete records of all tutors. For added security, initial sessions can be conducted in common areas of your home or online until you're comfortable.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can I change tutors if needed?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely. If for any reason you're not satisfied with your current tutor, we'll help you find a better match at no additional cost. Your child's learning experience is our top priority.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>EduMentor</h3>
+                    <p>Connecting students with qualified home tutors for personalized learning experiences since 2015.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Subjects</h3>
+                    <ul>
+                        <li><a href="#">Mathematics</a></li>
+                        <li><a href="#">Science</a></li>
+                        <li><a href="#">English</a></li>
+                        <li><a href="#">Computer Science</a></li>
+                        <li><a href="#">Languages</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Tutor Street, Learning City, 560001</li>
+                        <li><i class="fas fa-phone"></i> +91 9876543210</li>
+                        <li><i class="fas fa-envelope"></i> info@edumentor.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 EduMentor. All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
